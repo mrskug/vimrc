@@ -167,3 +167,12 @@ nnoremap <silent> <leader>l :call SyntasticCheckCoffeescript()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ansible Yaml
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Reset indent on blank lines
+let g:ansible_options = {'ignore_blank_lines': 0}
+
+
