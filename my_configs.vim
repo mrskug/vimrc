@@ -8,3 +8,4 @@ nnoremap <leader><leader> <C-^>
 
 
 set mouse=ar
+set nu!
