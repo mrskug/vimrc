@@ -7,5 +7,8 @@ nnoremap JJJJ <nop>
 nnoremap <leader><leader> <C-^>
 
 
-set mouse=ar
+set mouse=""
 set nu!
+
+au BufNewFile,BufRead *.tag setlocal ft=javascript
+let g:javascript_enable_domhtmlcss = 1
