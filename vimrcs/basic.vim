@@ -69,6 +69,7 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+set mouse=ar
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
