@@ -58,6 +58,10 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
+" This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
+inoremap jj <esc>
+nnoremap JJJJ <nop>
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
@@ -65,12 +69,18 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+set mouse=ar
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+set so=999
+
+" add vertical lines to colums
+"set colorcolumn=80,120
+"let &colorcolumn="80,".join(range(120,999),",")
+
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
@@ -171,6 +181,8 @@ set nobackup
 set nowb
 set noswapfile
 
+" Switch between the last two files
+nnoremap <leader><leader> <C-^>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
