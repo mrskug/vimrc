@@ -15,6 +15,11 @@ The awesome version includes a lot of great plugins, configurations and color sc
 	git clone https://github.com/tebro/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
+Might require this in your .zshrc or .bashrc
+```
+export TERM=xterm-256color
+```
+
 I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
 
 ## How to install the Basic version?
